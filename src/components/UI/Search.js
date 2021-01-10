@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 //if there is a prop it needs to be passed down into const search
 const Search = ({getQuery}) => {
-    const [text,setText] = useState(' ')
+    const [text,setText] = useState('')
 
     const onChange = (q)=>{
         setText(q)

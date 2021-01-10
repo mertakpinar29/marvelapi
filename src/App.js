@@ -6,10 +6,6 @@ import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 
 
-const apikey = "344d40df0c8cc373141c1dc321fae9cf"
-const hash = "bd0722d5750b6362d5ba0212ca36726b"
-
-
 const App = ()=> {
   const[items,setItems] = useState([])
   const[isLoading,setIsLoading] = useState(true)

@@ -11,7 +11,7 @@ const CharacterItem = ({ item }) => {
           <h1>{item.name}</h1>
           <ul>
             <li>
-              <strong>Nickname:</strong> {item.name}
+              <strong>Name:</strong> {item.name}
             </li>
             <li>
               <strong>Description:</strong> {item.description}
