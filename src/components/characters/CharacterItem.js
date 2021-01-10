@@ -2,12 +2,12 @@ import React from 'react'
 
 const CharacterItem = ({ item }) => {
   return (
-    <div className='card'>
-      <div className='card-inner'>
-        <div className='card-front'>
+    <div className='content'>
+      <div className='content-inner'>
+        <div className='content-front'>
           <img src={item.thumbnail.path + "/portrait_xlarge.jpg"} alt='' />
         </div>
-        <div className='card-back'>
+        <div className='content-back'>
           <h1>{item.name}</h1>
           <ul>
             <li>
