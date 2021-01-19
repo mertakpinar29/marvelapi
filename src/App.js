@@ -15,7 +15,9 @@ function App() {
   useEffect(()=>{
       const fetch = async()=>{
         if(query===''){
-          if(localStorage.getItem('favorites')==='[]'){
+          // checking if favorites array is empty or does not exist
+          if(localStorage.getItem('favorites')==='[]' || !localStorage.getItem('favorites')){
+            localStorage.setItem('favorites', '[]')
             const result = await axios(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=344d40df0c8cc373141c1dc321fae9cf&hash=${hash}`)
             console.log(result.data.data.results)
             setItems(result.data.data.results)
