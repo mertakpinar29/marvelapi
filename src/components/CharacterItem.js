@@ -3,6 +3,7 @@ import React from 'react'
 const CharacterItem = ({item}) => {
 
     const favorite = (item)=>{
+      // getting the previous element and adding the new favorite item
       var previousData = JSON.parse(localStorage.getItem('favorites'))
       previousData.push(item)
       localStorage.setItem('favorites',JSON.stringify(previousData))
